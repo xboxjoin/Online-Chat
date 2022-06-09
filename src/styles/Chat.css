@@ -1,0 +1,79 @@
+/*style={{margin:'10px',borderRadius: '10px', border: user.uid === message.uid ? '2px solid green' : '2px dashed red',*/
+/*marginLeft: user.uid === message.uid ? 'auto' : '10px',*/
+/*width: 'fit-content',*/
+/*padding: '5px'*/
+
+.client {
+    max-width: 100%;
+    margin: 0px;
+    display: flex;
+    margin: 40px 70px 0px 70px;
+}
+
+
+.client__container {
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.main__container {
+
+    color: #cbcbcb;
+    padding: 0px 0px 40px 0px;
+}
+
+.main__container:hover{
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.72);
+}
+
+.client__avatar {
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client__message {
+    position: relative;
+    grid-column-start: 2;
+}
+.client__message span {
+    white-space: normal;
+}
+
+.client__name {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: 1fr 40px;
+    text-align: end;
+}
+
+.left .client__message {
+    grid-column-start: 1;
+}
+
+.left .client__name {
+    display: block;
+}
+
+.client__message span {
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: #c4682f;
+
+}
